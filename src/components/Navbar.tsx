@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Cpu, Settings, PlaySquare, FileCode, Bot, BookOpen, Sparkles, Download, Check } from 'lucide-react';
+import { Terminal, Cpu, Settings, PlaySquare, FileCode, Bot, BookOpen, Sparkles, Download, Check, Github } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -22,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, onQuick
     { id: 'sandbox', label: 'Terminal & Desktop', icon: PlaySquare },
     { id: 'configs', label: 'Dotfiles & Configs', icon: FileCode },
     { id: 'ai', label: 'AI Copilot', icon: Bot },
+    { id: 'github', label: 'GitHub Deploy', icon: Github },
     { id: 'docs', label: 'Guides & Docs', icon: BookOpen },
   ];
 

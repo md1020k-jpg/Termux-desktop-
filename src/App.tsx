@@ -11,6 +11,7 @@ import { TerminalSandbox } from './components/TerminalSandbox';
 import { ConfigBuilder } from './components/ConfigBuilder';
 import { AiAssistant } from './components/AiAssistant';
 import { DocsViewer } from './components/DocsViewer';
+import { GitHubDeploy } from './components/GitHubDeploy';
 import { SetupConfig, ServiceItem } from './types';
 import { INITIAL_SERVICES } from './data/termuxData';
 
@@ -80,6 +81,9 @@ echo "[+] Setup configuration exported successfully from Termux Desktop Web Stud
         )}
         {activeTab === 'ai' && (
           <AiAssistant />
+        )}
+        {activeTab === 'github' && (
+          <GitHubDeploy />
         )}
         {activeTab === 'docs' && (
           <DocsViewer />

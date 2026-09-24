@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { ServiceItem } from '../types';
 import { Play, Square, RefreshCw, Terminal, CheckCircle2, AlertCircle, Cpu, Wifi, Shield, Layers } from 'lucide-react';
 import { DashboardWidget } from './DashboardWidget';
+import { SystemMonitorWidget } from './SystemMonitorWidget';
+import { ServiceLogsWidget } from './ServiceLogsWidget';
+import { StorageManagerWidget } from './StorageManagerWidget';
 
 interface ControlCenterProps {
   services: ServiceItem[];
@@ -72,6 +75,15 @@ export const ControlCenter: React.FC<ControlCenterProps> = ({ services, setServi
 
       {/* Real-Time System Telemetry Dashboard Widget */}
       <DashboardWidget />
+
+      {/* New System Monitor Widget */}
+      <SystemMonitorWidget />
+
+      {/* New Service Logs Widget */}
+      <ServiceLogsWidget services={services} />
+
+      {/* New PRoot Storage Manager Widget */}
+      <StorageManagerWidget />
 
       {/* Grid of Services */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
