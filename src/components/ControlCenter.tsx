@@ -5,6 +5,8 @@ import { DashboardWidget } from './DashboardWidget';
 import { SystemMonitorWidget } from './SystemMonitorWidget';
 import { ServiceLogsWidget } from './ServiceLogsWidget';
 import { StorageManagerWidget } from './StorageManagerWidget';
+import { BackupManagerWidget } from './BackupManagerWidget';
+import { PackageManagerWidget } from './PackageManagerWidget';
 
 interface ControlCenterProps {
   services: ServiceItem[];
@@ -84,6 +86,12 @@ export const ControlCenter: React.FC<ControlCenterProps> = ({ services, setServi
 
       {/* New PRoot Storage Manager Widget */}
       <StorageManagerWidget />
+
+      {/* New Backup Manager Widget */}
+      <BackupManagerWidget />
+
+      {/* New Package Manager Widget */}
+      <PackageManagerWidget />
 
       {/* Grid of Services */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
