@@ -1,0 +1,7 @@
+{
+  "name": "Termux Desktop Web Studio",
+  "description": "Web-based control center, setup script generator, config builder, and terminal assistant for Termux Desktop (X11/VNC/PRoot/HW Acceleration).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
